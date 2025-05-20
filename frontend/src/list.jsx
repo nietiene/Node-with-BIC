@@ -22,7 +22,6 @@ useEffect(() => {
             <table border={2}>  
                  <thead>
                <tr>
-               
                     <th>Id</th>
                     <th>Name</th>
              
