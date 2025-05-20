@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 const List = () => {
     const [user, setUser] = useState([]);
     const [error, setError] = useState(null); 
@@ -15,10 +15,11 @@ useEffect(() => {
 }, [])
  
 
-    if (error) return <div style={{ color: 'red'}}>{error.message}</div>
+    if (error) return <div style={{ color: 'red'}}>{error}</div>
    
     return (
         <div>
+         <Link to="/insert">Add New</Link>
             <table border={2}>  
                  <thead>
                <tr>
